@@ -35,7 +35,7 @@ function App() {
       </div>
       <button onClick={getWeatherHandler}>get weather</button>
       <p>{weatherDetails ? weatherDetails.coord.lat : "nayamade"}</p>
-      true && true = true true && false = false false && false = false
+      {weatherDetails && <p> {weatherDetails.coord.lon}</p>}
       {weatherDetails && (
         <table>
           <tr>
